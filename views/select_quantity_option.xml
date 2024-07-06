@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <template id="quantity_snippet" inherit_id="website.snippet_options"
+              name="select quantity options">
+        <xpath expr="//we-button[hasclass('o_we_add_to_cart_btn')]"
+               position="after">
+            <div>
+                <we-checkbox string="Select Quantity"
+                             data-customize-website-views="add_to_cart.select_qty_options"
+                             data-reload="/"/>
+            </div>
+        </xpath>
+    </template>
+</odoo>
